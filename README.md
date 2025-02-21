@@ -1,3 +1,4 @@
+> [!TIP]
 > # What is Git :-
 - Git is a version control system
 - Git helps you keep track of code changes
@@ -5,6 +6,7 @@
 - Git and Github are different things
 
 
+> [!TIP]
 > # Why Git :-
 - Over 70% of developers use Git !
 - Developers can work together from anywhere in the world.
@@ -13,6 +15,7 @@
 - Developers can see who made what changes and when.
 - Developers can see the changes made in the code.
 
+> [!TIP]
 > # Features of Git :-
 - When a file is changed added or deleted, it is considered modified
 - Your select the modified files you want to Stage
@@ -23,12 +26,13 @@
 
 > ======================================================================================
 
+> [!TIP]
 > # What is Github :-
 - Git is not the same as GitHub.
 - GitHub makes tools that use Git
 - GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018.
 
-> [!WARNING]
+> [!CAUTION]
 > # Configuring git for the first time :-
 
 ```
@@ -39,7 +43,7 @@ $ git config --global user.name "<Enter Your first Name here >"
 $ git config --globa user.email "<Enter Your Email here>"
 ```
 
-> [!WARNING]
+> [!CAUTION]
 > # General Git Features :-
 
 > [!NOTE]
