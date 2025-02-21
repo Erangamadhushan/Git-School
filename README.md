@@ -28,4 +28,64 @@
 - GitHub makes tools that use Git
 - GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018.
 
-> [!DANGER]
+> [!WARNING]
+> # Configuring git for the first time :-
+
+```
+$ git config --global user.name "<Enter Your first Name here >"
+```
+
+```
+$ git config --globa user.email "<Enter Your Email here>"
+```
+
+> [!WARNING]
+> # General Git Features :-
+
+> [!NOTE]
+> ## Initializing Git :-
+```
+$ git init
+```
+- Git now knows that is should watch the folder you initated it on. Git creates a hidden folder to keep track of changes.
+
+> [!NOTE]
+> ## Staging files/Adding files to Git repo :-
+
+Staged files are that are ready to be committed to the repository your are working on.<br/>
+When your first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage  them, or add them to the staging environment.
+
+```
+$ git add <filename with extension>
+```
+
+> [!TIP]
+> ### Stagin all files in a folder :-
+```
+$ git add --all
+```
+### OR
+```
+$ git add -A
+```
+
+
+> [!NOTE]
+> ## Making a Commit :-
+
+Adding commits keep track of our progress and changes as we work. Git considers each commit changes point or "save point". It is a point in the project you can go back if you find a bug, or want to make a change.
+
+When we commit, we should always include a message.
+
+```
+$ git commit -m "<Enter your commit message here >"
+```
+
+> [!TIP]
+> ### Git Commit without Stage :-
+Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes directly, skipping the staging environment.
+
+```
+$ git commit -a -m "<Enter Your message here >"
+```
+
