@@ -1,5 +1,6 @@
 import {data} from './content.js';
 window.addEventListener("DOMContentLoaded", () => {
+    renderLoadConfirmation();
     renderMainDirection(data);
 });
 
@@ -18,4 +19,25 @@ function renderMainDirection(contents) {
         `;
     });
     mainDirectionContainer.innerHTML = mainDirectionContainerContent;
+}
+
+async function renderLoadConfirmation() {
+    const { value: accept } = await Swal.fire({
+        title: "Terms and conditions",
+        backgroundColor:'#222',
+        input: "checkbox",
+        inputValue: 1,
+        inputPlaceholder: `
+          I agree with the terms and conditions
+        `,
+        confirmButtonText: `
+          Continue&nbsp;<i class="fa fa-arrow-right"></i>
+        `,
+        inputValidator: (result) => {
+          return !result && "You need to agree with T&C";
+        }
+      });
+      if (accept) {
+        Swal.fire("You agreed with T&C :)");
+      }
 }
