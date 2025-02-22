@@ -90,6 +90,150 @@ $ git commit -m "<Enter your commit message here >"
 Sometimes, when you make small changes, using the staging environment seems like a waste of time. It is possible to commit changes directly, skipping the staging environment.
 
 ```
-$ git commit -a -m "<Enter Your message here >"
+$ git commit -a -m "<Enter Your message here>"
+```
+
+> [!NOTE]
+> # Status of files and log :-
+
+```
+$ git status
+```
+
+> [!TIP]
+> ### File status in a more compact way :-
+
+```
+$ git status --short
+```
+
+### OR
+```
+$ git status -s
+```
+
+> [!TIP]
+> Log of a file :-
+
+log is used to view the history of commits for a repo.
+```
+$ git log
+```
+
+```
+$ git log --oneline
+```
+
+> [!CAUTION]
+> # Git Help :-
+If you are having trouble remembering commands or options for commands, you  can use Git help.
+
+See all the available options for the specific command -
+
+```
+$ git <command> -help
+```
+
+See all possible commands - 
+
+```
+$ git help --all
+```
+
+If you find yourself stuck in the list view, SHIFT + G to jump the end of the list, then q to exit the view.
+
+> [!CAUTION]
+> # Git Branching :-
+In Git, a branch is a new/separate version of the main repository. Branches allow you to work on different parts of a project without impacting the main branch. When the work is complete, a branch can be merged with the main project.
+
+We can even switch between branches and work on different projects without them interfering with each other.
+
+> [!NOTE]
+> # Making a new Git Branch :-
+
+```
+$ git branch <name of branch>
+```
+> [!NOTE]
+> # Checking all available Branches :-
+
+```
+$ git branch
+```
+
+> [!NOTE]
+> # Switching to other Branches :-
+
+```
+$ git checkout <branch name>
+```
+
+> [!NOTE]
+>#  Making a new branch an directly switching to it :-
+
+```
+$ git checkout -b <branch name>
+```
+
+> [!NOTE]
+> # Deleting a Branch :-
+
+```
+$ git branch -d <branch name>
+```
+
+> [!NOTE]
+> # Merging two Branches :-
+It's preferred to change/switch to master branch before any branch needs to be merged with it.
+
+```
+$ git merge <branch name>
+```
+
+#### This will merge the specified branch with our master branch
+
+> [!CAUTION]
+> # Working with Github :-
+
+Create a github account to create your remote repositories. Now, create a new repo where we will be uploading our files from local repo.
+
+<img src="create_repo.png"/>
+
+**Note**  - Local repository (repo) means the repo. which is on our system whereas, remote repo. means the one which is on other remote system/server, for eg:- GitHub, GitLab, Bitbucket, etc.
+
+> [!NOTE]
+> # Push local repo to GitHub :-
+Copy the url or the link of the repo that we just created. As an example, it should look like this - [https://github.com/Erangamadhushan/my-first-repo.git](https://github.com/Erangamadhushan/my-first-repo.git)
+
+Paste the copied url in the below git command.
+
+```
+$ git remote add origin <paste copied URL here>
+```
+
+'git remote add origin \<URL>' specifies that we are adding a remote repository, with the specified URL, as an origin to our local Git repo.
+
+Finally, pushing our master branch to the origin URL(remote repo) add set it as the default remote branch.
+
+```
+$ git push --set-upstream origin master
+```
+<h3 align="center">Go back into GitHub and see that the repository has been updated.</h3>
+
+> [!TIP]
+> ### Pushing local repo to github after doing the above process at least once :-
+
+First commit all the changes. Then push all the changes to our remote origin i.e remote repo on github.
+
+```
+$ git push origin
+```
+
+> [!NOTE]
+> # Pull local repo from GitHub :-
+Git pull is used to pull all changes from a remote repository into the branch we are working on. It is a combination of fetch and merge. Use it to update your local Git.
+
+```
+$ git pull origin
 ```
 
