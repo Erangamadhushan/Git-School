@@ -237,3 +237,20 @@ Git pull is used to pull all changes from a remote repository into the branch we
 $ git pull origin
 ```
 
+> [!NOTE]
+> # Pull branch from GitHub :-
+
+First check which branches we have and where are we working at the moment by 'git branch' command. Since we do not have the new branch on out local Git which is to be pulled from the Github. So, to see all local and remote branches, use -
+
+```
+$ git branch -a
+```
+
+> [!TIP]
+> ### For viewing only remote branches :-
+```
+$ git branch -r
+```
+
+Now, the new branch is seen in the console but it is not available on our local repo. So, let's check it out using `git checkout <branch name>`. Now run `git pull` to pull that branch on our local repo. We can now check the available branches using `git branch`.
+
