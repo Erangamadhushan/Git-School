@@ -261,3 +261,52 @@ $ git branch -r
 
 Now, the new branch is seen in the console but it is not available on our local repo. So, let's check it out using `git checkout <branch name>`. Now run `git pull` to pull that branch on our local repo. We can now check the available branches using `git branch`.
 
+
+> [!NOTE]
+> # Push branch to GitHub :-
+
+First, let's create a new local branch we will be pushing to Github. Enter the command as `git checkout -b <branch name>`. You can check the status of the files in this current branch using `git status`. Commit all the committed changes for all the files in this branch using `git commit -a -m "<Message>"`. Now push this branch from our local repo to Github using `git push origin <branch name>`.
+
+
+> [!NOTE]
+> # Git clone from GitHub :-
+
+We can clone a forked repo from Github on our local repo. A clone is a full copy of repository, including all logging and versions of files. Move back to the original repository, and click the green "Code" button to get the URL to clone. Copy the URL.
+
+
+**Now int the git bash, enter the following command to clone the copied repo onto your local machine.**
+
+```
+$ git clone <repo url>
+```
+
+**To specify a specific folder to clone to, add the name of the folder after the repository URL, like this-**
+
+```
+$ git clone <copied url> <folder name>
+```
+
+> [!CAUTION]
+> # Git Undo
+
+> [!NOTE]
+> # Git Revert :-
+
+`revert` is the command we use when we want to take a previous commit and add it as a new commit, keeping the log intact. First thing, we need to find the point we want to return to. To do that, we need to go through the log. To avoid the very long log list, use the `--oneline` option which gives just one line per commit showing -
+
+- The first seven characters of the commit hash
+- The commit message
+
+> [!TIP]
+> ### Git Revert HEAD :-
+
+We revert the latest commit using `git revert HEAD` (revert the latest change, and then commit). By adding the option `--no-edit`, we can skip the commit message editor (getting the default revert message).
+
+```
+$ git revert HEAD --no-edit
+```
+
+> [!TIP]
+> ### Git Revert to any commit :-
+
+To revert to earlier commits, use `git revert HEAD~x`(x being a number.1 going back one more, 2 going back two more, etc)
