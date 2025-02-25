@@ -3,7 +3,7 @@
 
 ## Git is a version control system that tracks and manages code changes locally on your computer, while GitHub is a web-based platform that hosts Git repositories, enabling developers to store, share, and collaborate on code projects with others worldwide.
 
-<a href="Git vs Github - Quick Guide.pdf" rel="noopener" download>Download PDF</a>
+<a href="Git vs Github - Quick Guide.pdf" rel="noopener" download="GitIntroduction.pdf">Download PDF</a>
 
 > [!TIP]
 > # What is Git :-
