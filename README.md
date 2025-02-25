@@ -302,7 +302,7 @@ $ git clone <copied url> <folder name>
 
 We revert the latest commit using `git revert HEAD` (revert the latest change, and then commit). By adding the option `--no-edit`, we can skip the commit message editor (getting the default revert message).
 
-```
+```t
 $ git revert HEAD --no-edit
 ```
 
@@ -314,4 +314,33 @@ To revert to earlier commits, use `git revert HEAD~x`(x being a number.1 going b
 > [!NOTE]
 > # Git Reset
 
-**reset** is the command we use when we want to move the repository back to previous commit, descarding any changes made after that commit. First, get the seven characters of the commit hash from the log for the commit that you want to go back for.
+**reset** is the command we use when we want to move the repository back to previous commit, descarding any changes made after that commit. First, get the seven characters of the commit hash from the log for the commit that you want to go back for. Then
+we reset our repository back to that specific commit using `git reset commithash`(commithash being the first 7 characters of the commit hash we found in the log).
+
+```
+$ git reset <commithash>
+```
+
+> [!TIP]
+> ### Git Undo Reset :-
+
+Even though the commits are no longer showing up in the log, it is not removed from Git. If we know the commit hash,
+we can reset to it using `git reset <commithash>`.
+
+> [!NOTE]
+> # Git Amend :-
+
+**commit --amend** is used to modify the most recent commit. It combines changes in the staging environment with the latest commit, and creates a new commit. This new commit replaces the latest commit entirely.
+
+One of the simplest things you can do with --amend is to change a commit message.
+
+```
+$ git commit --amend -m "<Commit Message>"
+```
+
+Using this, the previous commit is replaced with our amended one.
+
+> [!TIP]
+> ### Git Amend Files :-
+
+Adding files with --amend works the same way as above. Just add them to the staging environment before commiting.
