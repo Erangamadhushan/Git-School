@@ -310,3 +310,8 @@ $ git revert HEAD --no-edit
 > ### Git Revert to any commit :-
 
 To revert to earlier commits, use `git revert HEAD~x`(x being a number.1 going back one more, 2 going back two more, etc)
+
+> [!NOTE]
+> # Git Reset
+
+**reset** is the command we use when we want to move the repository back to previous commit, descarding any changes made after that commit. First, get the seven characters of the commit hash from the log for the commit that you want to go back for.
