@@ -25,6 +25,101 @@
         </script>
     </head>
     <body>
-        
+        <!--
+            A Complete Guide to Git and GitHub
+
+            Branching and Merging
+
+            1. Create and Switch to a Branch:
+
+            ```
+            git branch <branch-name>git branch feature-branch       # Create branch
+            git checkout feature-branch     # Switch to branch
+            git checkout -b feature-branch  # Create and switch (combined)
+            ```
+
+            2. List Branches:
+
+            ```
+            git branch        # Local branches
+            git branch -a     # All branches including remote
+            ```
+
+            3. Merge Branches:
+
+            ```
+            git checkout main     # Switch to target branch
+            git merge feature-branch
+            ```
+
+            4. Delete Branches:
+
+            ```
+            git branch -d feature-branch    # Local branch
+            git push origin --delete feature-branch  # Remote branch
+            ```
+
+
+            Working with Remotes
+
+            1. List Remotes:
+
+            git remote -v
+
+            2. Fetch Updates:
+
+            git fetch origin
+
+            3. Working with Specific Remotes
+
+            git pull upstream main   # Pull from upstream
+            git push origin feature-branch  # Push to specific branch
+
+            
+            History and Comparison
+
+            1. View Commit History:
+
+            git log
+            git log --oneline
+            git log --graph --oneline --all
+
+            2. Compare Changes
+
+            git diff                      # Unstaged changes
+            git diff --staged             # Staged changes
+            git diff branch1 branch2      # Between branches
+            git diff commit1 commit2      # Between commits
+
+            
+
+            Stashing Changes
+
+            1. Stash Changes
+
+            git stash
+            git stash save "stash message"
+
+            2. List Stashes
+
+            git stash list
+
+            3. Apply Stashes
+
+            git stash apply              # Most recent stash
+            git stash apply stash@{n}    # Specific stash
+            git stash pop                # Apply and remove stash
+
+            4. Delete Stashes
+
+            git stash drop stash@{n}
+            git stash clear              # Remove all stashes
+
+
+            
+
+
+
+        -->
     </body>
 </html>
