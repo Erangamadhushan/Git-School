@@ -74,3 +74,45 @@ $ git add -A
 ```
 
 
+# Save changes temporarily
+git stash
+
+# List stashes
+git stash list
+
+# Apply stashed changes
+git stash apply
+
+# Apply and remove stashed changes
+git stash pop
+
+# Remove stash
+git stash drop
+
+================================================================================
+# Show changes between commits
+git diff
+
+# Show changes in staged files
+git diff --staged
+
+# Show changes in a file
+git diff filename.txt
+
+
+=================================================================================
+
+# Discard changes in working directory
+git restore filename.txt
+git checkout -- filename.txt  # Older syntax
+
+# Unstage files
+git restore --staged filename.txt
+git reset HEAD filename.txt  # Older syntax
+
+# Amend the last commit
+git commit --amend
+
+# Reset to a previous commit
+git reset commit-hash        # Soft reset (keeps changes)
+git reset --hard commit-hash # Hard reset (discards changes)
