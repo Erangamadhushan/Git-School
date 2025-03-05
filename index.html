@@ -7,22 +7,33 @@
         <link rel="icon" href="https://raw.githubusercontent.com/Erangamadhushan/Git-School/main/assets/images/favicon.png" type="image/png">
         <meta name="description" content="Git School is a simple web application that helps you to learn Git and GitHub.">
         <meta name="keywords" content="Git, GitHub, Git School, Learn Git, Learn GitHub">
-        <meta name="author" content="Eranga Madhushan">
-        <meta name="robots" content="index, follow">
+        <meta name="author" content="Eranga Madhushan"> <meta name="robots" content="index, follow">
         <!-- <meta name="theme-color" content="#000000"> -->
         <meta name="msapplication-navbutton-color" content="#000000">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.5/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+                }
+            }
+            }
+        </script>
     </head>
-    <body class="bg-dark">
-        <div class="py-5"> <h4 class="display-3 text-center text-white">Welcome To Git School </h4> <hr  class="w-75 mx-auto mt-5 bg-maroon"/> </div>
-        <div class="grid col-1 md:col-2 lg:col-3 mainDirection p-2 gap-2"> </div>
-        <div class="p-5"><h3 class="text-white">Download PDF here</h3><a href="Git vs Github - Quick Guide.pdf" rel="noopener" download>Download PDF</a></div>
-        <div class="py-5"> <h4 class=" text-center text-white py-4"><a rel="noopener" class="h3 text-white" href="https://github.com/Erangamadhushan/Git-School" target="_blank">View on GitHub</a></h4> <hr  class="w-75 mx-auto mt-5 bg-maroon"/> </div>
+    <body class="bg-gray-800">
+        <div class="py-5"> <h1 class=" text-white text-center text-[4em]">Welcome To Git School </h1> </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[10px] mx-auto py-5 mainDirection "> </div>
 
-        <script src="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.5/js/jquery.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.5/js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <div class="py-5"><button type="button" id="explorer_more" class="bg-white m-5 p-3 rounded-lg">Explorer More</button></div>
+        <div class=""><a href="Git vs Github - Quick Guide.pdf" rel="noopener" download>Download PDF</a></div>
+        <div class=""> <h4 class=""><a rel="noopener" class="" href="https://github.com/Erangamadhushan/Git-School" target="_blank">View on GitHub</a></h4> <hr  class="w-75 mx-auto mt-5 bg-maroon"/> </div>
+
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
         <script src="scripts/index.js" type="module"></script>
     </body>
 </html>
