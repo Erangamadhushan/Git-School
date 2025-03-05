@@ -25,6 +25,139 @@
         </script>
     </head>
     <body>
-        
+        <!--
+            A Complete Guide to Git and GitHub
+
+            Advanced Workflow Management
+
+            1. Rebasing
+
+            git checkout feature-branch
+            git rebase main             # Rebase feature branch onto main
+            git rebase -i HEAD~3        # Interactive rebase for last 3 commits
+
+            2. Cherry-picking Commits
+
+            git cherry-pick commit-hash
+
+            3. Reflog for Recovery:
+
+            git reflog
+            git checkout HEAD@{n}       # Go to specific reflog entry
+
+            4. Bisect for Bug Finding:Bisect for Bug Finding:
+
+            git bisect start
+            git bisect bad              # Current commit is bad
+            git bisect good commit-hash # Known good commit
+            # Git helps find the problematic commit
+            git bisect reset            # When done
+
+
+            Advanced History Rewriting
+
+
+            1. Amend Recent Commit
+
+            git commit --amend
+            git commit --amend --no-edit  # No message change
+
+
+            2. Reset Commits
+
+            git reset --soft HEAD~1      # Undo last commit, keep changes staged
+            git reset HEAD~1             # Undo last commit, unstage changes
+            git reset --hard HEAD~1      # Discard last commit and changes
+
+            3. Filter Branch (for repository cleanup):
+
+            git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
+
+            4. Clean Working Directory
+
+            git clean -n                # Dry run
+            git clean -df               # Delete untracked files and directories
+
+            
+            Advanced GitHub Collaboration
+
+
+            1. Pull Requests with Options:
+
+            git request-pull v1.0 https://github.com/username/repo.git main
+
+            2. Configure Multiple Remotes:
+
+            git remote add upstream https://github.com/original-owner/original-repo.git
+
+            3. Git Submodules
+
+            git submodule add https://github.com/username/repo.git path/to/submodule
+            git submodule update --init --recursive
+
+            4. Git Hooks:
+
+            # Create executable files in .git/hooks/
+            # e.g., pre-commit, post-commit, etc.
+
+
+            Git Automation and Customization
+
+            1. Git Aliases:
+
+            git config --global alias.co checkout
+            git config --global alias.br branch
+            git config --global alias.unstage 'reset HEAD --'
+
+            2. Custom Merge and Diff Tools
+
+            git config --global merge.tool vimdiff
+            git config --global diff.tool vimdiff
+
+            3. Git Attributes:
+
+            # In .gitattributes file:
+            *.txt diff=text
+            *.jpg diff=exif
+
+            4. Shallow Clones and Sparse Checkouts
+
+            git clone --depth=1 https://github.com/user/repo.git
+
+            # For sparse checkout:
+            git sparse-checkout init
+            git sparse-checkout set "path/to/include"
+
+
+            GitHub Actions and CI/CD
+
+
+            1. Create Workflow Files
+            ymal
+
+            # .github/workflows/main.yml
+            name: CI
+            on: [push, pull_request]
+            jobs:
+            build:
+                runs-on: ubuntu-latest
+                steps:
+                - uses: actions/checkout@v2
+                - name: Run tests
+                    run: |
+                    npm install
+                    npm test
+
+            2. GitHub CLI for Advanced Operations
+
+            gh pr create --title "Feature" --body "Description"
+            gh issue create --title "Bug" --body "Description"
+            gh workflow run workflow.yml
+
+            
+
+            This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.
+
+        -->
     </body>
 </html>
