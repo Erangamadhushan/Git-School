@@ -10,6 +10,7 @@
         <meta name="author" content="Eranga Madhushan"> <meta name="robots" content="index, follow">
         <!-- <meta name="theme-color" content="#000000"> -->
         <meta name="msapplication-navbutton-color" content="#000000">
+        <link rel="stylesheet" type="text/css" href="styles/less/style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
@@ -25,63 +26,8 @@
         </script>
     </head>
     <body class="bg-gray-800">
-        <div id="root">
-
-        </div>
+        <div id="root"> </div>
         <!--
-            A Complete Guide to Git and GitHub
-
-            Advanced Workflow Management
-
-            1. Rebasing
-
-            git checkout feature-branch
-            git rebase main             # Rebase feature branch onto main
-            git rebase -i HEAD~3        # Interactive rebase for last 3 commits
-
-            2. Cherry-picking Commits
-
-            git cherry-pick commit-hash
-
-            3. Reflog for Recovery:
-
-            git reflog
-            git checkout HEAD@{n}       # Go to specific reflog entry
-
-            4. Bisect for Bug Finding:Bisect for Bug Finding:
-
-            git bisect start
-            git bisect bad              # Current commit is bad
-            git bisect good commit-hash # Known good commit
-            # Git helps find the problematic commit
-            git bisect reset            # When done
-
-
-            Advanced History Rewriting
-
-
-            1. Amend Recent Commit
-
-            git commit --amend
-            git commit --amend --no-edit  # No message change
-
-
-            2. Reset Commits
-
-            git reset --soft HEAD~1      # Undo last commit, keep changes staged
-            git reset HEAD~1             # Undo last commit, unstage changes
-            git reset --hard HEAD~1      # Discard last commit and changes
-
-            3. Filter Branch (for repository cleanup):
-
-            git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
-
-            4. Clean Working Directory
-
-            git clean -n                # Dry run
-            git clean -df               # Delete untracked files and directories
-
-            
             Advanced GitHub Collaboration
 
 
@@ -163,5 +109,12 @@
 
         -->
         <script type="module" src="scripts/content/expert/expert.js"></script>
+        <!-- <script src="scripts/controller.js"></script> -->
     </body>
 </html>
+
+
+
+
+
+                    

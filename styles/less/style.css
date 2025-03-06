@@ -1,0 +1,7 @@
+.copy-btn {
+  transition: all 0.2s;
+}
+.copy-btn.copied {
+  color: #0ce21b;
+  font-size: 1.05em;
+}

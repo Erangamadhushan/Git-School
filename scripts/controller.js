@@ -1,9 +1,9 @@
  // Add functionality to all copy buttons
  document.addEventListener('DOMContentLoaded', () => {
     const copyButtons = document.querySelectorAll('.copy-btn');
-    
     copyButtons.forEach(button => {
         button.addEventListener('click', () => {
+            console.log("Hi");
             // Find the code block associated with this button
             const codeBlock = button.previousElementSibling;
             const codeText = codeBlock.textContent;
@@ -33,3 +33,4 @@
         });
     });
 });
+
