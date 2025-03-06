@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mainContent += `
         <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
-            <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Advanced Workflow Management</h2>
+            <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Advanced History Rewriting</h2>
             <div class="py-4">
                 <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Amend Recent Commit</p>
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">Fix the most recent commit by adding changes or editing the message:</p>
@@ -99,6 +99,109 @@ document.addEventListener("DOMContentLoaded", () => {
                     <code class="w-full rounded-lg text-white bg-gray-900 p-5">
                         git clean -n                # Dry run<br/>
                         git clean -df               # Delete untracked files and directories
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    mainContent += `
+        <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+            <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Advanced GitHub Collaboration</h2>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Pull Requests with Options:</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Fix the most recent commit by adding changes or editing the message:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git request-pull v1.0 https://github.com/username/repo.git main
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. Configure Multiple Remotes:</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Remove commits while keeping or discarding changes:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git remote add upstream https://github.com/original-owner/original-repo.git
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">3. Git Submodules</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Rewrite history to remove unwanted files or sensitive data:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git submodule add https://github.com/username/repo.git path/to/submodule<br/>
+                        git submodule update --init --recursive
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">4. Git Hooks:</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Remove untracked files from your working directory:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        # Create executable files in .git/hooks/
+                        # e.g., pre-commit, post-commit, etc.
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    mainContent += `
+        <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+            <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Git Automation and Customization</h2>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Git Aliases:</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Fix the most recent commit by adding changes or editing the message:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git config --global alias.co checkout<br/>
+                        git config --global alias.br branch<br/>
+                        git config --global alias.unstage 'reset HEAD --'
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. Custom Merge and Diff Tools</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Remove commits while keeping or discarding changes:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git config --global merge.tool vimdiff<br/>
+                        git config --global diff.tool vimdiff
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">3. Git Attributes:</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Rewrite history to remove unwanted files or sensitive data:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        # In .gitattributes file:<br/>
+                        *.txt diff=text<br/>
+                        *.jpg diff=exif
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">4. Shallow Clones and Sparse Checkouts</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Remove untracked files from your working directory:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git clone --depth=1 https://github.com/user/repo.git<br/>
+
+                        # For sparse checkout:<br/>
+                        git sparse-checkout init<br/>
+                        git sparse-checkout set "path/to/include"
                     </code>
                     <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
                 </div>
