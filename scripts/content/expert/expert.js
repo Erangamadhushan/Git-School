@@ -209,6 +209,49 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
+    mainContent += `
+        <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+            <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">GitHub Actions and CI/CD</h2>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Create Workflow Files</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Fix the most recent commit by adding changes or editing the message:</p>
+                <div class="flex flex-col">
+                    <p class="text-white ml-2">ymal</p>
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        # .github/workflows/main.yml<br/>
+                        name: CI<br/>
+                        on: [push, pull_request]<br/>
+                        jobs:<br/>
+                        build:<br/>
+                            runs-on: ubuntu-latest<br/>
+                            steps:<br/>
+                            - uses: actions/checkout@v2<br/>
+                            - name: Run tests<br/>
+                                run: |<br/>
+                                npm install<br/>
+                                npm test<br/>
+
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. GitHub CLI for Advanced Operations</p>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">Remove commits while keeping or discarding changes:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        gh pr create --title "Feature" --body "Description"
+                        gh issue create --title "Bug" --body "Description"
+                        gh workflow run workflow.yml
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+            </div>
+            
+        </div>
+        <p class="text-[1em] text-white py-3">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</p>
+    `;
+
     root.innerHTML = mainContent;
 
     const copyButtons = document.querySelectorAll('.copy-btn');

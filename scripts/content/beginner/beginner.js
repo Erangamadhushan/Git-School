@@ -1,0 +1,135 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const root = document.querySelector('#root');
+    let mainContent = `<h1 class=" py-5 text-[2em] md:text-[3em] text-center text-white">A Complete Guide to Git and GitHub</h1>`;
+
+    mainContent += `
+        <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+            <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Setting Up Git and GitHub</h2>
+            <div class="py-4">
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Install Git: Download and install from <a href="https://git-scm.com/downloads" target="_blank" class="text-blue-700 hover:underline">git-scm.com</a></p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git config --global user.name "Your Name"<br/>
+                        git config --global user.email "your.email@example.com"
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. Create a GitHub account: Go to <a href="https://github.com" class="text-blue-700 hover:underline" target="_blank">github.com </a>
+                <p class="text-[1em] text-white md:text-[2em] py-3">Basic Commands</p>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Initialize a Repository</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git init
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. Clone a Repository:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git clone https://github.com/username/repository.git
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">3. Check Status</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git status
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">4. Add Files to Staging Area:</p>
+                <p class="text-[1em]  py-3 text-white">Add Specific File(s)</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git add filename    # Add specific file
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em]  py-3 text-white">Add all files</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git add .           # Add all files
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-white ml-3 py-2 text-[1.2em]">OR</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git add --all       # Add all files
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-white ml-3 py-2 text-[1.2em]">OR</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git add -A          # Add all files
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">5. Commit Changes</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git commit -m "Commit message"
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">6. Connect to Remote Repository</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git remote add origin https://github.com/username/repository.git
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">7. Push to GitHub:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git push -u origin main    # First time
+                        git push                   # Subsequent pushes
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                <p class="text-[1em] md:text-[1.5em] py-3 text-white">8. Pull from GitHub:</p>
+                <div class="flex flex-col">
+                    <code class="w-full rounded-lg text-white bg-gray-900 p-5">
+                        git pull
+                    </code>
+                    <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                </div>
+                
+        </div>
+    `;
+
+    root.innerHTML = mainContent;
+
+    const copyButtons = document.querySelectorAll('.copy-btn');
+    copyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Find the code block associated with this button
+            const codeBlock = button.previousElementSibling;
+            const codeText = codeBlock.textContent;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(codeText)
+                .then(() => {
+                    // Visual feedback
+                    button.textContent = 'Copied!';
+                    button.classList.add('copied');
+                    
+                    // Reset button after 2 seconds
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                        button.classList.remove('copied');
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Failed to copy: ', err);
+                    button.textContent = 'Error!';
+                    
+                    // Reset button after 2 seconds
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                    }, 2000);
+                });
+        });
+    });
+});
