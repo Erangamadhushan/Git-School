@@ -1,7 +1,61 @@
 .copy-btn {
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 .copy-btn.copied {
   color: #0ce21b;
   font-size: 1.05em;
+}
+.menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.menu .menu-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.menu .menu-btn.active::before {
+  transform: translateY(12px) rotateZ(45deg);
+}
+.menu .menu-btn.active::after {
+  transform: translateY(-12px) rotateZ(-45deg);
+}
+.menu .menu-btn::before {
+  content: "";
+  width: 70%;
+  height: 4px;
+  background: #222;
+  transform: translateY(5px);
+}
+.menu .menu-btn::after {
+  content: "";
+  width: 70%;
+  height: 4px;
+  background: #222;
+  transform: translateY(-5px);
+}
+.menu .menu-list {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 0.5em;
+  overflow-y: auto;
+  position: absolute;
+  right: 25px;
+  opacity: 0;
+  transform: translateX(200%);
+  transition: all 0.5s;
+}
+.menu .menu-list.active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+.menu .menu-list ul li {
+  border-radius: 0.5em;
 }
