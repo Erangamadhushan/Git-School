@@ -241,8 +241,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">Remove commits while keeping or discarding changes:</p>
                 <div class="flex flex-col">
                     <code class="w-full rounded-lg text-white bg-gray-900 p-5">
-                        gh pr create --title "Feature" --body "Description"
-                        gh issue create --title "Bug" --body "Description"
+                        gh pr create --title "Feature" --body "Description"<br/>
+                        gh issue create --title "Bug" --body "Description"<br/>
                         gh workflow run workflow.yml
                     </code>
                     <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener('click', () => {
             // Find the code block associated with this button
             const codeBlock = button.previousElementSibling;
-            const codeText = codeBlock.textContent;
+            const codeText = codeBlock.textContent.trim();
             
             // Copy to clipboard
             navigator.clipboard.writeText(codeText)
@@ -296,6 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const menuList = document.querySelector('.menu-list');
         let menuContent = `
             <ul class="grid w-[100%]">
+                <li class="w-[90%] mx-auto group hover:bg-gray-900 hover:text-white text-center my-1 py-3"><a href="./index.html" class="p-1 text-center w-[100%] text-gray-900 bg-white group-hover:bg-gray-900 group-hover:text-white">Home Page</a></li>
                 <li class="w-[90%] mx-auto group hover:bg-gray-900 hover:text-white text-center my-1 py-3"><a href="./beginner.html" class="p-1 text-center w-[100%] text-gray-900 bg-white group-hover:bg-gray-900 group-hover:text-white">Beginner Level</a></li>
                 <li class="w-[90%] mx-auto group hover:bg-gray-900 hover:text-white text-center my-3 py-3"><a href="./intermediate.html" class="p-1 text-center w-[100%] text-gray-900 bg-white group-hover:bg-gray-900 group-hover:text-white">Intermediate Level</a></li>
                 <li class="w-[90%] mx-auto group hover:bg-gray-900 hover:text-white text-center my-3 py-3"><a href="./expert.html" class="p-1 text-center w-[100%] text-gray-900 bg-white group-hover:bg-gray-900 group-hover:text-white">Expert Level</a></li>

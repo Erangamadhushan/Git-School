@@ -8,7 +8,6 @@
         <meta name="description" content="Git School is a simple web application that helps you to learn Git and GitHub.">
         <meta name="keywords" content="Git, GitHub, Git School, Learn Git, Learn GitHub">
         <meta name="author" content="Eranga Madhushan"> <meta name="robots" content="index, follow">
-        <!-- <meta name="theme-color" content="#000000"> -->
         <meta name="msapplication-navbutton-color" content="#000000">
         <link rel="stylesheet" type="text/css" href="styles/less/style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -28,38 +27,6 @@
     <body class="bg-gray-800">
         <div class="menu"> <div class="menu-btn"></div> <div class="menu-list"> </div> </div>
         <div id="root"> </div>
-        <!--
-            
-            GitHub Actions and CI/CD
-
-
-            1. Create Workflow Files
-            ymal
-
-            # .github/workflows/main.yml
-            name: CI
-            on: [push, pull_request]
-            jobs:
-            build:
-                runs-on: ubuntu-latest
-                steps:
-                - uses: actions/checkout@v2
-                - name: Run tests
-                    run: |
-                    npm install
-                    npm test
-
-            2. GitHub CLI for Advanced Operations
-
-            gh pr create --title "Feature" --body "Description"
-            gh issue create --title "Bug" --body "Description"
-            gh workflow run workflow.yml
-
-            
-
-            This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.
-
-        -->
         <script type="module" src="scripts/content/expert/expert.js"></script>
         <script src="scripts/controller.js"></script>
     </body>
