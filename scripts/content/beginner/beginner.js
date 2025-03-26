@@ -79,8 +79,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li class="text-white py-2">Push to GitHub with <span class="bg-gray-900 p-2 rounded-lg">git push<span></li>
                 </ul>
                 <hr/>
-                <p class="text-[1em] text-white py-5 text-center">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</p>
+                
             </div>
+        </div>
+        <div>
+            <h2 class=" text-center py-3 text-white">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</h2>
+        </div>
+        <div class="bg-gray-900 text-white py-1">
+            <h2 class="py-1 text-white text-center">Powered by EM956 Community. </h2>
         </div>
     `;
 

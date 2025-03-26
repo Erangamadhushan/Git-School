@@ -250,7 +250,12 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             
         </div>
-        <p class="text-[1em] text-white py-3">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</p>
+        <div>
+            <h2 class=" text-center py-3 text-white">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</h2>
+        </div>
+        <div class="bg-gray-900 text-white py-1">
+            <h2 class="py-1 text-white text-center">Powered by EM956 Community. </h2>
+        </div>
     `;
 
     root.innerHTML = mainContent;
