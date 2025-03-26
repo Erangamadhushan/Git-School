@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mainContent += `
         <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+            <div class="py-4">
+                <h1 class="py-4 text-[2.75em] text-white font-bold">Get Started Today!</h1>
+                <p class="text-white text-[1em] md:text-[1.5em]"> Whether you're just starting out or looking to refresh your skills, our page is here to support you every step of the way. Dive into our tutorials and start building your Git and GitHub expertise today!</p>
+                <p class="md:text-[1.75em] text-white py-5">Let's get started!, <span class="fond-bold">Good Luck All !<span></p>
+            </div>
             <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Setting Up Git and GitHub</h2>
             <div class="py-4">
                 <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Install Git: Download and install from <a href="https://git-scm.com/downloads" target="_blank" class="text-blue-700 hover:underline">git-scm.com</a></p>
