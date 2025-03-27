@@ -16,14 +16,14 @@ export const learnReasons = [
 export const ourContent = [
     {
         title:"Basic Git Commands",
-        content:"Understanding Git and GitHub is a must-have skill for any aspiring developer. It demonstrates your ability to work collaboratively and manage complex projects efficiently."
+        content:"Learn how to initialize a repository, commit changes, and manage branches."
     },
     {
         title:"GitHub Essentials",
-        content:""
+        content:"Understanding Git and GitHub is a must-have skill for any aspiring developer. It demonstrates your ability to work collaboratively and manage complex projects efficiently."
     },
     {
-        title:"",
-        content:""
+        title:"Best Practices",
+        content:"Get tips on how to use Git and GitHub effectively in real-world projects."
     }
 ];

@@ -1,4 +1,5 @@
 import {data} from './content.js';
+import {learnReasons, ourContent} from './indexContent.js';
 window.addEventListener("DOMContentLoaded", () => {
     //renderLoadConfirmation();
     renderMainDirection(data);
@@ -38,41 +39,41 @@ function renderSubcontents() {
     const subcontentsContainer = document.querySelector('.subContents');
     let subContentsContent = `
         <div class="max-w-[1200px] mx-auto p-3">
-            <h2 class="text-[1.5em] py-3 font-semibold text-white">Why Learn Git and GitHub?</h2>
-            <div class="py-3">
-                <p class="text-[1.25em] text-white font-semibold">1. Version Control </p>
-                <p class="py-4 text-white">Git allows you to track changes in your codebase, ensuring that you can revert back to previous versions if needed. This is crucial for maintaining a clean and manageable code history.</p>
+            <h2 class="text-[1.5em] md:text-[2.5em] py-3 font-semibold text-white">Why Learn Git and GitHub?</h2>
+            <div class="flex flex-wrap jusitfy-center items-center gap-x-5">`;
+                
+    learnReasons.map((reason) => {
+        subContentsContent += `
+            <div class="w-[90%] max-w-[360px] min-h-[220px] mx-auto p-5 my-5 pb-5 pt-2 rounded-lg duration-300 bg-gray-700 transition-300 relative hover:scale-[1.025] hover:bg-white group ">
+                <p class="text-[1.25em] text-white font-semibold text-center group-hover:text-gray-700">${reason.title} </p>
+                <p class="py-4 text-white group-hover:text-gray-700">${reason.content}</p>
             </div>
-            <div class="py-3">
-                <p class="text-[1.25em] text-white font-semibold">2. Collaboration </p>
-                <p class="py-4 text-white">GitHub provides a platform where developers can share, collaborate, and contribute to projects. It's a hub for open-source projects and a great place to build your professional portfolio.</p>
-            </div>
-            <div class="py-3">
-                <p class="text-[1.25em] text-white font-semibold">3. Career Advancement </p>
-                <p class="py-4 text-white">Understanding Git and GitHub is a must-have skill for any aspiring developer. It demonstrates your ability to work collaboratively and manage complex projects efficiently.</p>
-            </div>
-        </div>
-        <div class="max-w-[1200px] mx-auto p-3">
-            <div>
-                <h2 class="text-[1.5em] py-3 font-semibold text-white" >What You'll Learn Here</h2>
-            </div>
-            <div>
-                <p class="text-white text-[1.25em] py-3">Our content is tailored to help you grasp the fundamentals of Git and GitHub. You'll discover:</p>
-            </div>
-            <div class="py-3">
-                <p class="text-[1.25em] text-white font-semibold">1. Basic Git Commands </p>
-                <p class="py-4 text-white">Learn how to initialize a repository, commit changes, and manage branches.</p>
-            </div>
-            <div class="py-3">
-                <p class="text-[1.25em] text-white font-semibold">2. GitHub Essentials </p>
-                <p class="py-4 text-white">Understanding Git and GitHub is a must-have skill for any aspiring developer. It demonstrates your ability to work collaboratively and manage complex projects efficiently.</p>
-            </div>
-            <div class="py-3">
-                <p class="text-[1.25em] text-white font-semibold">3. Best Practices </p>
-                <p class="py-4 text-white">Get tips on how to use Git and GitHub effectively in real-world projects.</p>
+        `;
+    });
+    subContentsContent += `
             </div>
         </div>
     `;
+        
+        subContentsContent += `
+            <div class="max-w-[1200px] mx-auto p-3">
+                <div>
+                    <h2 class="text-[1.5em] md:text-[2.5em] py-3 font-semibold text-center text-white" >What You'll Learn Here</h2>
+                </div>
+                <div class="flex flex-wrap justify-center items-center gap-x-5">
+        `;
+        ourContent.map((content) => {
+            subContentsContent += `
+                <div class="w-[90%] max-w-[360px] min-h-[220px] mx-auto p-5 my-5 pb-5 pt-2 rounded-lg duration-300 bg-gray-700 transition-300 relative hover:scale-[1.025] hover:bg-white group ">
+                    <p class="text-[1.25em] text-white font-semibold text-center  group-hover:text-gray-700">${content.title} </p>
+                    <p class="py-4 text-white group-hover:text-gray-700">${content.content}</p>
+                </div>
+            `;
+        })
+        subContentsContent += `
+                </div>
+            </div>
+        `;
 
     subcontentsContainer.innerHTML = subContentsContent;
 }
