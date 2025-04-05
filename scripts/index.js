@@ -12,7 +12,7 @@ function renderMainDirection(contents) {
     let mainDirectionContainerContent = ``;
     contents.map((content) => {
         mainDirectionContainerContent += `
-            <div class="w-[90%] max-w-[400px] min-h-[250px] mx-auto p-5 my-5 pb-5 pt-2 rounded-lg duration-300 bg-gray-700 transition-300 relative hover:scale-[1.025]">
+            <div class="w-[90%] max-w-[400px] min-h-[250px] mx-auto p-5 my-5 pb-5 pt-2 rounded-lg duration-300 bg-gray-700 transition-300 relative hover:scale-[1.025] scroll-up">
                 <div class="py-2">
                     <h2 class="text-center text-2xl text-white py-5">${content.category}</h2>
                     <p class="text-center text-md text-white py-5">${content.title}</p>

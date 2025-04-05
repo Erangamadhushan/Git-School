@@ -85,10 +85,15 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
     </div>
+    <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+        <h2 class="text-white py-3 md:text-[2em]">Good Progress...!!</h2>
+        <a href="./expert.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Next ${`>`}</a>
+    </div>
     <div>
         <h2 class=" text-center py-3 text-white">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</h2>
     </div>
-    <div class="bg-gray-900 text-white py-1">
+    <div class="bg-gray-900 text-white py-2">
+        <p class="text-center">© 2021 Git School. All rights reserved.</p>
         <h2 class="py-1 text-white text-center">Powered by EM956 Community. </h2>
     </div>
     `;

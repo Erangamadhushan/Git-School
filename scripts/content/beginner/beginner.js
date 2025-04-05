@@ -87,10 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 
             </div>
         </div>
+        <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+            <h2 class="text-white py-3 md:text-[2em]">Good Progress...!!</h2>
+            <a href="./intermediate.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Next ${`>`}</a>
+        </div>
         <div>
             <h2 class=" text-center py-3 text-white">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</h2>
         </div>
-        <div class="bg-gray-900 text-white py-1">
+        <div class="bg-gray-900 text-white py-2">
+            <p class="text-center">© 2021 Git School. All rights reserved.</p>
             <h2 class="py-1 text-white text-center">Powered by EM956 Community. </h2>
         </div>
     `;
@@ -138,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li class="w-[90%] mx-auto group hover:bg-gray-900 hover:text-white text-center my-3 py-3"><a href="./expert.html" class="p-1 text-center w-[100%] text-gray-900 bg-white group-hover:bg-gray-900 group-hover:text-white">Expert Level</a></li>
             </ul>
             <div class="flex">
-                <p class="text-gray-900 ml-3 text-lg fond-bold">Contribute To :</p>
+                <p class="text-gray-900 ml-3 text-lg fond-bold text-center">Contribute To :</p>
                 <a href="https://github.com/Erangamadhushan/Git-School" target="_blank"><img src="./assets/icons/github.png"/></a>
             </div>
         `;
