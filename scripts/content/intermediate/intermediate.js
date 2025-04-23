@@ -44,47 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     </div>
     `;
-/*
-<div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
-        <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Branching and Merging</h2>
-        <div class="py-4">
-            <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Create and Switch to a Branch:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Rebasing rewrites commit history by moving a branch to a new base commit. Use it to create a cleaner linear history before merging:</p>
-            <div class="flex flex-col">
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git branch <branch-name>git branch feature-branch       # Create branch <br/> git checkout feature-branch     # Switch to branch <br/> git checkout -b feature-branch  # Create and switch (combined)</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-            </div>
-        </div>
-        <div class="py-4">
-            <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. List Branches:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Cherry-picking applies specific commits from one branch to another, ideal for pulling individual fixes:</p>
-            <div class="flex flex-col">
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5"> git branch        # Local branches<br/> git branch -a     # All branches including remote
-                </code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-            </div>
-        </div>
-        <div class="py-4">
-            <p class="text-[1em] md:text-[1.5em] py-3 text-white">3. Merge Branches:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Reflog tracks reference changes, enabling recovery of seemingly lost commits or branches:</p>
-            <div class="flex flex-col">
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git checkout main     # Switch to target branch <br/>git merge feature-branch  # Merge feature branch into main
-                    
-                </code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-            </div>
-        </div>
-        <div class="py-4">
-            <p class="text-[1em] md:text-[1.5em] py-3 text-white">4. Delete Branches:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Bisect performs binary search through commit history to find which commit introduced a bug:</p>
-            <div class="flex flex-col">
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git branch -d feature-branch    # Local branch<br/>
-                git push origin --delete feature-branch  # Remote branch </code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-            </div>
-        </div>
-    </div>
-*/
     mainContent += `
     
     <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
@@ -95,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2 class=" text-center py-3 text-white">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</h2>
     </div>
     <div class="bg-gray-900 text-white py-2">
-        <p class="text-center">© 2021 Git School. All rights reserved.</p>
+        <p class="text-center">© 2025 Git School. All rights reserved.</p>
         <h2 class="py-1 text-white text-center">Powered by EM956 Community. </h2>
     </div>
     `;
