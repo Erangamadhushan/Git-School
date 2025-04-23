@@ -44,9 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     </div>
     `;
-
-    mainContent += `
-    <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+/*
+<div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
         <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Branching and Merging</h2>
         <div class="py-4">
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Create and Switch to a Branch:</p>
@@ -85,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
     </div>
+*/
+    mainContent += `
+    
     <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
         <h2 class="text-white py-3 md:text-[2em]">Good Progress...!!</h2>
         <a href="./expert.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Next ${`>`}</a>

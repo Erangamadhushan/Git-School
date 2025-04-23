@@ -39,7 +39,7 @@ function renderSubcontents() {
     const subcontentsContainer = document.querySelector('.subContents');
     let subContentsContent = `
         <div class="max-w-[1200px] mx-auto p-3">
-            <h2 class="text-[1.5em] md:text-[2.5em] py-3 font-semibold text-white">Why Learn Git and GitHub?</h2>
+            <h2 class="text-center md:text-justify text-[1.5em] md:text-[2.5em] py-3 font-semibold text-white">Why Learn Git and GitHub?</h2>
             <div class="flex flex-wrap jusitfy-center items-center gap-x-5">`;
                 
     learnReasons.map((reason) => {
@@ -58,7 +58,7 @@ function renderSubcontents() {
         subContentsContent += `
             <div class="max-w-[1200px] mx-auto p-3">
                 <div>
-                    <h2 class="text-[1.5em] md:text-[2.5em] py-3 font-semibold text-center text-white" >What You'll Learn Here</h2>
+                    <h2 class="text-center md:text-justify  text-[1.5em] md:text-[2.5em] py-3 font-semibold text-center text-white" >What You'll Learn Here</h2>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-x-5">
         `;
