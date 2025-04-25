@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. Fetch Updates</p>
             <p class="text-[1em] text-white md:text-[1.5em] py-3">Fetching downloads changes from the remote but doesn't merge them—useful to see what's changed before integrating.</p>
             <div class="flex flex-col">
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5"> git fetch origin</code>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git fetch origin</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
         </div>
