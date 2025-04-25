@@ -42,6 +42,54 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
         </div>
+
+        <h2 class="text-[1.4em] md:text-[2.25em] py-3 text-white">Working with Remotes</h2>
+        <p class="text-white text-lg">Remote repositories allow collaboration with other developers and provide backup of your code.</p>
+        <div class="py-4">
+            <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. List Remotes</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">This shows all remote repositories and their URLs. Most repositories have an "origin" remote pointing to GitHub.</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git remote -v</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+        </div>
+        <div class="py-4">
+            <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. Fetch Updates</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Fetching downloads changes from the remote but doesn't merge them—useful to see what's changed before integrating.</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5"> git fetch origin</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+        </div>
+        <div class="py-4">
+            <p class="text-[1em] md:text-[1.5em] py-3 text-white">3. Working with Specific Remotes</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">These commands are essential when working with forks or multiple remotes.</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git pull upstream main #Pull from a different remote</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <br/>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push origin feature-branch #Push to specific branch</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+        </div>
+        <h2 class="text-[1.4em] md:text-[2.25em] py-3 text-white">History and Comparison</h2>
+        <p class="text-white text-lg">Examining history helps understand how the codebase evolved and who made specific changes.</p>
+        <div class="py-4">
+            <p class="text-[1em] md:text-[1.5em] py-3 text-white">View Commit History</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Bisect performs binary search through commit history to find which commit introduced a bug:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log </code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --oneline  # Shortened version</code><br>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --graph  # Visual representation</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --author="Author Name"  # Filter by author</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --since="2 weeks ago"  # Filter by date</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+        </div>
     </div>
     `;
     mainContent += `
