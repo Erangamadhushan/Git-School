@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2 class="text-[1.4em] md:text-[2.25em] py-3 text-white">History and Comparison</h2>
         <p class="text-white text-lg">Examining history helps understand how the codebase evolved and who made specific changes.</p>
         <div class="py-4">
-            <p class="text-[1em] md:text-[1.5em] py-3 text-white">View Commit History</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Bisect performs binary search through commit history to find which commit introduced a bug:</p>
+            <p class="text-[1.25em] md:text-[1.5em] py-3 text-white">View Commit History</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">The "--graph" option visualizes branch and merge history, while "--oneline" provides a condensed view</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log </code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
@@ -88,8 +88,47 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --since="2 weeks ago"  # Filter by date</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --stat  # Show file changes</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log -p  # Show diffs</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --follow [file-name]  # Track file renames</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+
+            <p class="text-[1.25em] md:text-[5em] py-3 text-white">Compare Changes</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">These commands help review changes before committing and understand differences between versions.</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff #Shows unstaged changes</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff --cached #Shows staged changes</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff HEAD #Shows all changes</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff <commit1> <commit2> #Compare two commits</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff <branch1> <branch2> #Compare two branches</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff [commit] -- [file] #Compare specific file</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
         </div>
+
+        <h2 class="text-[1.4em] md:text-[2.25em] py-3 text-white">Stashing Changes</h2>
+        <p class="text-white text-lg">Stashing temporarily shelves changes, allowing you to switch tasks without committing incomplete work.</p>
+        <div class="py-4">
+            <p class="text-[1.25em] md:text-[5em] py-3 text-white">Stash Changes</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">This stores your current changes and reverts your working directory to match HEAD.</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash </code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">You can also add a message to your stash for better identification:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash save "message"</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                
+            </div>
+        </div>
+        
     </div>
     `;
     mainContent += `
