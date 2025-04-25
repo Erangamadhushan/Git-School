@@ -125,7 +125,36 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">You can also add a message to your stash for better identification:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash save "message"</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-                
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To stash untracked files, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash -u</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To stash ignored files, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash -a</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To view your stashes, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash list</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To view the changes in a specific stash, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash show stash@{0}</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To view the changes in a specific stash in detail, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash show -p stash@{0}</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes from a specific stash, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash apply stash@{0}</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes from the latest stash, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash apply</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes and remove the stash, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash pop</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes and remove the stash, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash drop stash@{0}</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To clear all stashes, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash clear</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
         </div>
         
