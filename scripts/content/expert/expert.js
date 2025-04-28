@@ -250,6 +250,13 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             
         </div>
+        <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
+            <h2 class="text-white py-3 md:text-[2em]">Good Progress...!!</h2>
+            <div class="flex py-3 gap-5">
+                <a href="./intermediate.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Prev ${`<`}</a>
+                <a href="./summary.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Next ${`>`}</a>
+            </div>
+        </div>
         <div>
             <h2 class=" text-center py-3 text-white">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</h2>
         </div>

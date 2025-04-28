@@ -8,15 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2 class="text-[1.4em] md:text-[2em] py-3 text-white">Branching and Merging</h2>
         <div class="py-4">
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">1. Create and Switch to a Branch:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Rebasing rewrites commit history by moving a branch to a new base commit. Use it to create a cleaner linear history before merging:</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Creating a branch allows you to develop features, fix bugs, or experiment without affecting the main codebase. It creates an isolated environment for your changes.</p>
             <div class="flex flex-col">
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git branch <branch-name>git branch feature-branch       # Create branch <br/> git checkout feature-branch     # Switch to branch <br/> git checkout -b feature-branch  # Create and switch (combined)</code>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git branch feature-branch       # Create branch <br/> git checkout feature-branch     # Switch to branch <br/> git checkout -b feature-branch  # Create and switch (combined)</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
         </div>
         <div class="py-4">
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. List Branches:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Cherry-picking applies specific commits from one branch to another, ideal for pulling individual fixes:</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Viewing all available branches helps you keep track of ongoing work and understand the project structure. This allows you to see both local branches on your machine and remote branches on GitHub.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5"> git branch        # Local branches<br/> git branch -a     # All branches including remote
                 </code>
@@ -25,17 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="py-4">
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">3. Merge Branches:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Reflog tracks reference changes, enabling recovery of seemingly lost commits or branches:</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Merging combines the changes from one branch into another, typically integrating completed features or fixes back into the main branch. This process allows separate development paths to be united.</p>
             <div class="flex flex-col">
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git checkout main     # Switch to target branch <br/>git merge feature-branch  # Merge feature branch into main
-                    
-                </code>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git checkout main     # Switch to target branch <br/>git merge feature-branch  # Merge feature branch into main </code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
         </div>
         <div class="py-4">
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">4. Delete Branches:</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Bisect performs binary search through commit history to find which commit introduced a bug:</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Once a branch's changes have been merged, deleting it keeps your repository clean and organized. This prevents confusion and ensures you don't have outdated or abandoned branches.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git branch -d feature-branch    # Local branch<br/>
                 git push origin --delete feature-branch  # Remote branch </code>
@@ -55,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="py-4">
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">2. Fetch Updates</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">Fetching downloads changes from the remote but doesn't merge them—useful to see what's changed before integrating.</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Fetching retrieves the latest changes from remote repositories without merging them into your local code. This allows you to see what others have done before deciding to incorporate their changes.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git fetch origin</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
@@ -63,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="py-4">
             <p class="text-[1em] md:text-[1.5em] py-3 text-white">3. Working with Specific Remotes</p>
-            <p class="text-[1em] text-white md:text-[1.5em] py-3">These commands are essential when working with forks or multiple remotes.</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Managing individual remote connections lets you collaborate with multiple repositories simultaneously. This gives you flexibility to push and pull code from different sources as needed.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git pull upstream main #Pull from a different remote</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
@@ -96,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
 
-            <p class="text-[1.25em] md:text-[5em] py-3 text-white">Compare Changes</p>
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Compare Changes</p>
             <p class="text-[1em] text-white md:text-[1.5em] py-3">These commands help review changes before committing and understand differences between versions.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff #Shows unstaged changes</code>
@@ -114,10 +112,10 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
 
-        <h2 class="text-[1.4em] md:text-[2.25em] py-3 text-white">Stashing Changes</h2>
+        <h2 class="text-[1.4em] md:text-[2.0em] py-3 text-white">Stashing Changes</h2>
         <p class="text-white text-lg">Stashing temporarily shelves changes, allowing you to switch tasks without committing incomplete work.</p>
         <div class="py-4">
-            <p class="text-[1.25em] md:text-[5em] py-3 text-white">Stash Changes</p>
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Stash Changes</p>
             <p class="text-[1em] text-white md:text-[1.5em] py-3">This stores your current changes and reverts your working directory to match HEAD.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash </code>
@@ -164,7 +162,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     <div class="flex flex-col w-[95%] mx-auto max-w-[1200px]">
         <h2 class="text-white py-3 md:text-[2em]">Good Progress...!!</h2>
-        <a href="./expert.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Next ${`>`}</a>
+        <div class="flex py-3 gap-5">
+            <a href="./beginner.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Prev ${`<`}</a>
+            <a href="./expert.html" class="bg-white p-3 rounded-lg w-[150px] text-[1.25em] text-center hover:bg-green-400 hover:text-white">Next ${`>`}</a>
+        </div>
     </div>
     <div>
         <h2 class=" text-center py-3 text-white">This comprehensive guide covers essential Git and GitHub operations at all skill levels, providing you with the knowledge to effectively manage your version control and collaboration workflows from basic to advanced techniques.</h2>
