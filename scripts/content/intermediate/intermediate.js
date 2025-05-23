@@ -155,6 +155,89 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
         </div>
+
+        <h2 class="text-[1.4em] md:text-[2.0em] py-3 text-white">Tagging Releases</h2>
+        <p class="text-white text-lg">Tags are used to mark specific points in history as important, often used for releases.</p>
+        <div class="py-4">
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Create a Tag</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">Tags are often used to mark release points (e.g., v1.0, v2.0).</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git tag v1.0</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To create an annotated tag with a message:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git tag -a v1.0 -m "Version 1.0"</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">List Tags</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">To view all tags in the repository:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git tag</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Push Tags to Remote</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">To push a specific tag to the remote repository:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push origin v1.0</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.25em] py-3">To push all tags to the remote repository:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push --tags</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Delete a Tag</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">To delete a local tag:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git tag -d v1.0</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To delete a remote tag:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push origin --delete v1.0</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+        </div>
+        
+        <h2 class="text-[1.4em] md:text-[2.0em] py-3 text-white">Undoing Changes(Safe Resets)</h2>
+        <p class="text-white text-lg">Undoing changes allows you to revert to a previous state without losing your work.</p>
+        <div class="py-4">
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Undo Last Commit</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">To undo the last commit but keep changes in the working directory:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git reset HEAD~1</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                
+            </div>
+
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Discard changes in working directory.</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">To discard changes in the working directory:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git checkout -- [file]</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To discard all changes in the working directory:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git checkout .</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Restore a deleted file:</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">To restore a deleted file from the last commit:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git restore --source=HEAD -- [file]</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To restore all deleted files from the last commit:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git restore --source=HEAD -- .</code>
+            </div>
+        </div>
+
+        <h2 class="text-[1.4em] md:text-[2.0em] py-3 text-white">Viewing File Blame</h2>
+        <p class="text-white text-lg">The "blame" command shows who made changes to each line of a file, helping identify authorship and responsibility.</p>
+        <div class="py-4">
+            <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">View Blame</p>
+            <p class="text-[1em] text-white md:text-[1.5em] py-3">To view the blame for a specific file:</p>
+            <div class="flex flex-col">
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git blame [file]</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+            </div>
+        </div>
         
     </div>
     `;
