@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="text-[1em] text-white md:text-[1.5em] py-3">Managing individual remote connections lets you collaborate with multiple repositories simultaneously. This gives you flexibility to push and pull code from different sources as needed.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git pull upstream main #Pull from a different remote</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-                <br/>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push origin feature-branch #Push to specific branch</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
@@ -78,18 +78,25 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log </code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --oneline  # Shortened version</code><br>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --graph  # Visual representation</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --author="Author Name"  # Filter by author</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --since="2 weeks ago"  # Filter by date</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --stat  # Show file changes</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log -p  # Show diffs</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git log --follow [file-name]  # Track file renames</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
             </div>
@@ -98,17 +105,23 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="text-[1em] text-white md:text-[1.5em] py-3">These commands help review changes before committing and understand differences between versions.</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff #Shows unstaged changes</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff --cached #Shows staged changes</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff HEAD #Shows all changes</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff <commit1> <commit2> #Compare two commits</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
-                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff <branch1> <branch2> #Compare two branches</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff [commit1] [commit2] #Compare two commits</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff  [branch1] [branch2] #Compare two branches</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git diff [commit] -- [file] #Compare specific file</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
             </div>
         </div>
 
@@ -120,39 +133,62 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash </code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">You can also add a message to your stash for better identification:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash save "message"</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To stash untracked files, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash -u</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To stash only staged changes, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash --keep-index</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
+                <p class="text-[1em] text-white md:text-[1.5em] py-3">To stash specific files, use:</p>
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash push [file1] [file2]  # Stash specific files</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
+                <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash push -m "message" -- [file1] [file2]  # Stash specific files</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To stash ignored files, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash -a</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To view your stashes, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash list</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To view the changes in a specific stash, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash show stash@{0}</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To view the changes in a specific stash in detail, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash show -p stash@{0}</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes from a specific stash, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash apply stash@{0}</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes from the latest stash, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash apply</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes and remove the stash, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash pop</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To apply the changes and remove the stash, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash drop stash@{0}</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To clear all stashes, use:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git stash clear</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
             </div>
         </div>
 
@@ -163,10 +199,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="text-[1em] text-white md:text-[1.5em] py-3">Tags are often used to mark release points (e.g., v1.0, v2.0).</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git tag v1.0</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To create an annotated tag with a message:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git tag -a v1.0 -m "Version 1.0"</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
+                
             </div>
 
             <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">List Tags</p>
@@ -180,20 +219,25 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="text-[1em] text-white md:text-[1.5em] py-3">To push a specific tag to the remote repository:</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push origin v1.0</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <p class="text-[1em] text-white md:text-[1.25em] py-3">To push all tags to the remote repository:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push --tags</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
+                
             </div>
 
             <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Delete a Tag</p>
             <p class="text-[1em] text-white md:text-[1.5em] py-3">To delete a local tag:</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git tag -d v1.0</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To delete a remote tag:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git push origin --delete v1.0</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
             </div>
         </div>
         
@@ -212,10 +256,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <p class="text-[1em] text-white md:text-[1.5em] py-3">To discard changes in the working directory:</p>
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git checkout -- [file]</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To discard all changes in the working directory:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git checkout .</code>
-                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
+
+                
             </div>
 
             <p class="text-[1.25em] md:text-[1.75em] py-3 text-white">Restore a deleted file:</p>
@@ -223,8 +270,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="flex flex-col">
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git restore --source=HEAD -- [file]</code>
                 <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button>
+
                 <p class="text-[1em] text-white md:text-[1.5em] py-3">To restore all deleted files from the last commit:</p>
                 <code class="w-full rounded-lg text-white bg-gray-900 p-5">git restore --source=HEAD -- .</code>
+                <button type="button" class="copy-btn rounded-md m-3 p-2 w-[100px] bg-white text-gray-500">Copy</button><br/>
             </div>
         </div>
 
